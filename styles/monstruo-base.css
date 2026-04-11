@@ -1,0 +1,119 @@
+/* styles/monstruo-base.css - Para TODOS los monstruos */
+.personaje-container {
+    padding: 40px;
+    color: #fff;
+}
+
+.monstruo-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.monstruo-info img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid var(--color-primario);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--color-glow);
+    transition: transform 0.5s;
+}
+
+.monstruo-info img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.monstruo-texto {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 3px solid var(--color-primario);
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.galeria-monstruo h3 {
+    color: var(--color-primario);
+    text-shadow: 0 0 10px var(--color-glow);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid var(--color-primario);
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.15) rotate(-1deg);
+    box-shadow: 0 0 20px var(--color-glow);
+}
+
+.galeria-monstruo {
+    padding: 30px;
+    background: var(--fondo-galeria);
+    border: 2px solid var(--color-primario);
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1000px;
+    color: #fff;
+    box-shadow: 0 0 20px var(--color-glow);
+}
+
+.audio-container {
+    text-align: center;
+    background: var(--fondo-audio);
+    border: 2px solid var(--color-borde-audio);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px var(--color-glow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.audio-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--color-hover);
+}
+
+.audio-container audio {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.datos-monstruo {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.datos-monstruo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos-monstruo li {
+    margin-bottom: 8px;
+}

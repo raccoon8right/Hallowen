@@ -1,0 +1,90 @@
+/* styles/monstruo-temas.css */
+.monstruo-ashley {
+    --color-primario: #ff8800;
+    --color-glow: #ff6600;
+    --color-hover: #ff9900;
+    --color-borde-audio: #ff8800;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #330 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #400 100%);
+}
+
+.monstruo-candyman {
+    --color-primario: gold;
+    --color-glow: goldenrod;
+    --color-hover: gold;
+    --color-borde-audio: goldenrod;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #220 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #330 100%);
+}
+
+.monstruo-chucky {
+    --color-primario: red;
+    --color-glow: red;
+    --color-hover: orange;
+    --color-borde-audio: orange;
+    --fondo-galeria: radial-gradient(circle at center, #100 40%, #400 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #500 100%);
+}
+
+.monstruo-freddy {
+    --color-primario: red;
+    --color-glow: red;
+    --color-hover: orange;
+    --color-borde-audio: orange;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #200 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #300 100%);
+}
+
+.monstruo-ghostface {
+    --color-primario: white;
+    --color-glow: #ccc;
+    --color-hover: white;
+    --color-borde-audio: #ccc;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #222 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #333 100%);
+}
+
+.monstruo-jason {
+    --color-primario: #00bfff;
+    --color-glow: #0099ff;
+    --color-hover: #00ffff;
+    --color-borde-audio: #00ffff;
+    --fondo-galeria: radial-gradient(circle at center, #001 40%, #003 100%);
+    --fondo-audio: radial-gradient(circle at center, #000 40%, #022 100%);
+}
+
+.monstruo-leatherface {
+    --color-primario: darkred;
+    --color-glow: #a00;
+    --color-hover: #ff8800;
+    --color-borde-audio: #ff8800;
+    --fondo-galeria: radial-gradient(circle at center, #200 40%, #100 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #400 100%);
+}
+
+.monstruo-maniac {
+    --color-primario: darkblue;
+    --color-glow: darkblue;
+    --color-hover: blue;
+    --color-borde-audio: blue;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #001 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #001 100%);
+}
+
+.monstruo-michael {
+    --color-primario: darkblue;
+    --color-glow: darkblue;
+    --color-hover: blue;
+    --color-borde-audio: blue;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #001 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #001 100%);
+}
+
+.monstruo-tallman {
+    --color-primario: silver;
+    --color-glow: white;
+    --color-hover: silver;
+    --color-borde-audio: silver;
+    --fondo-galeria: radial-gradient(circle at center, #000 40%, #222 100%);
+    --fondo-audio: radial-gradient(circle at center, #111 40%, #333 100%);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstruo de Halloween</title>
+    <link rel="stylesheet" href="/styles/monstruo-base.css">
+    <link rel="stylesheet" href="styles/monstruo-temas.css">
+    <style>
+        /* Estilos adicionales si los necesitas */
+    </style>
+</head>
+<body id="monstruo-body" class="">
+    <div class="personaje-container" id="contenedor-principal"></div>
+
+    <script>
+        // Obtener el ID de la URL (ej: ?id=ashley)
+        const params = new URLSearchParams(window.location.search);
+        const idMonstruo = params.get('id');
+
+        if (!idMonstruo) {
+            document.getElementById('contenedor-principal').innerHTML = '<h1>Monstruo no especificado</h1>';
+        } else {
+            // Cargar el JSON
+            fetch('data/monstruos.json')
+                .then(response => response.json())
+                .then(data => {
+                    const monstruo = data.find(m => m.id === idMonstruo);
+                    if (!monstruo) {
+                        document.getElementById('contenedor-principal').innerHTML = '<h1>Monstruo no encontrado</h1>';
+                        return;
+                    }
+
+                    // Asignar la clase al body para las variables CSS
+                    document.body.className = `monstruo-${monstruo.nombreClase}`;
+
+                    // Generar galería de imágenes
+                    let galeriaHtml = '';
+                    monstruo.galeria.forEach(img => {
+                        galeriaHtml += `<img src="${img}" alt="${monstruo.nombre}">`;
+                    });
+
+                    // Generar lista de datos
+                    let datosHtml = '<ul>';
+                    monstruo.datos.forEach(dato => {
+                        datosHtml += `<li>${dato}</li>`;
+                    });
+                    datosHtml += '</ul>';
+
+                    // HTML completo
+                    const html = `
+                        <div class="monstruo-info">
+                            <img src="${monstruo.imagenPrincipal}" alt="${monstruo.nombre}">
+                            <div class="monstruo-texto">
+                                <h2>${monstruo.nombre}</h2>
+                                <p>${monstruo.texto}</p>
+                            </div>
+                        </div>
+
+                        <div class="galeria-monstruo">
+                            <h3>Galería de ${monstruo.nombre}</h3>
+                            <div class="galeria">
+                                ${galeriaHtml}
+                            </div>
+                        </div>
+
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="${monstruo.audio}" type="audio/m4a">
+                                Tu navegador no soporta audio.
+                            </audio>
+                        </div>
+
+                        <div class="datos-monstruo">
+                            <h3>Datos de ${monstruo.nombre}</h3>
+                            ${datosHtml}
+                        </div>
+                    `;
+
+                    document.getElementById('contenedor-principal').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error cargando monstruos:', error);
+                    document.getElementById('contenedor-principal').innerHTML = '<h1>Error al cargar los datos</h1>';
+                });
+        }
+    </script>
+</body>
+</html>

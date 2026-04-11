@@ -1,0 +1,20 @@
+[
+    {
+        "id": "ashley",
+        "nombre": "Ashley J. Williams",
+        "nombreClase": "ashley",
+        "imagenPrincipal": "../imagenes/#",
+        "texto": "Ashley 'Ash' Williams es el héroe de la saga 'El Despertar del Diablo' (Evil Dead). Combate a los deadites con su motosierra y escopeta.",
+        "galeria": [
+            "../gifs/Ash.gif",
+            "../imagenes/#"
+        ],
+        "audio": "../audios/#",
+        "datos": [
+            "Nombre real: Ashley J. Williams",
+            "Arma: Motosierra y escopeta",
+            "Primera aparición: The Evil Dead (1981)",
+            "Frase: 'Groovy'"
+        ]
+    }
+]
