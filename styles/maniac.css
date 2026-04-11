@@ -1,0 +1,99 @@
+.personaje-container { padding: 40px; color: #fff; }
+
+.maniac-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.maniac-info img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 0 0 20px darkblue;
+    transition: transform 0.5s;
+}
+
+.maniac-info img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.maniac-texto {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 3px solid darkblue;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.galeria-maniac h3 { color: darkblue; text-shadow: 0 0 10px navy; margin-bottom: 20px; }
+
+.galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+
+.galeria img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.15) rotate(-1deg);
+    box-shadow: 0 0 20px navy;
+}
+
+.galeria-maniac {
+    padding: 30px;
+    background: radial-gradient(circle at center, #000 40%, #001 100%);
+    border: 2px solid darkblue;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1000px;
+    color: #fff;
+    box-shadow: 0 0 20px navy;
+}
+
+.audio-container {
+    text-align: center;
+    background: radial-gradient(circle at center, #111 40%, #001 100%);
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px navy;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.audio-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px blue;
+}
+
+.audio-container audio {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.datos-maniac {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid darkblue;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.datos-maniac ul { list-style: none; padding: 0; }
+.datos-maniac li { margin-bottom: 8px; }

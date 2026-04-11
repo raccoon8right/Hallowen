@@ -1,0 +1,119 @@
+.personaje-container {
+    padding: 40px;
+    color: #fff;
+}
+
+.tallman-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.tallman-info img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+    transition: transform 0.5s;
+}
+
+.tallman-info img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.tallman-texto {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 3px solid silver;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+.galeria-tallman h3 {
+    color: silver;
+    text-shadow: 0 0 10px white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid silver;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.15) rotate(-1deg);
+    box-shadow: 0 0 20px white;
+}
+
+.galeria-tallman {
+    padding: 30px;
+    background: radial-gradient(circle at center, #000 40%, #222 100%);
+    border: 2px solid silver;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1000px;
+    color: #fff;
+    box-shadow: 0 0 20px silver;
+}
+
+/* Estilo del audio */
+.audio-container {
+    text-align: center;
+    background: radial-gradient(circle at center, #111 40%, #333 100%);
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.audio-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px silver;
+}
+
+.audio-container audio {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.datos-tallman {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid silver;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.datos-tallman ul {
+    list-style: none;
+    padding: 0;
+}
+
+.datos-tallman li {
+    margin-bottom: 8px;
+}
