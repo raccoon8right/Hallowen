@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Halloween</title>
+    <link rel="stylesheet" href="/styles/styles1.css">
+    <link rel="stylesheet" href="/styles/registro.css">
+</head>
+<body>
+<header>
+    <h1>🕸️ Regístrate para el boletín 🕸️</h1>
+</header>
+
+<nav>
+    <a href="/index.html">⬅️ Regresar</a>
+    <a href="descarga.html">📖 Descarga</a>
+    <a href="compra.html">🛒 Compra</a>
+    <a href="contacto.html">👻 Contacto</a>
+</nav>
+
+<main class="registro-container">
+    <h2>🕷️ Crea tu cuenta o suscríbete al boletín</h2>
+    <form action="#" method="post" class="formulario-registro">
+        <fieldset>
+        <legend>Información personal</legend>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+591..." required>
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+        </fieldset>
+
+        <fieldset>
+        <legend>Datos de acceso</legend>
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmar">Confirmar contraseña:</label>
+        <input type="password" id="confirmar" name="confirmar" required>
+        </fieldset>
+
+        <fieldset>
+        <legend>Preferencias</legend>
+        <label for="genero">Género favorito de terror:</label>
+        <select id="genero" name="genero">
+            <option>Selecciona...</option>
+            <option>Fantasmas</option>
+            <option>Vampiros</option>
+            <option>Monstruos</option>
+            <option>Psicológico</option>
+            <option>Suspenso</option>
+        </select>
+
+        <label>¿Deseas recibir noticias por correo?</label>
+        <div class="opciones">
+            <label><input type="radio" name="boletin" value="si" checked> Sí</label> 
+            <label><input type="radio" name="boletin" value="no"> No</label>
+        </div>
+
+        <label><input type="checkbox" name="terminos" required> Acepto los términos y condiciones</label>
+        </fieldset>
+
+        <button type="submit">🎃 Registrarme</button>
+        <button type="reset">🧹 Limpiar</button>
+    </form>
+</main>
+
+<footer>
+    <p>🕯️ Creado por Adrian Marcos Alarcón López - 2025</p>
+</footer>
+</body>
+</html>

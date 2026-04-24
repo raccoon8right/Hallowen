@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
-/* ===== ESTILOS GLOBALES ===== */
 body {
     margin: 0;
     font-family: 'Creepster', cursive;
@@ -21,12 +20,6 @@ header h1 {
     text-shadow: 0 0 15px #ff3300;
 }
 
-h1 {
-    color: orange;
-    text-shadow: 0 0 15px #ff3300;
-    margin-top: 40px;
-}
-
 nav {
     margin: 20px 0;
 }
@@ -40,7 +33,7 @@ nav a {
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0,0.5);
 }
 
 nav a:hover {
@@ -48,7 +41,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* ===== CONTADOR (para index) ===== */
 .countdown {
     margin: 2rem auto;
     padding: 1rem;
@@ -60,7 +52,6 @@ nav a:hover {
     box-shadow: 0 0 10px #ff3300 inset;
 }
 
-/* ===== PUERTAS (para index) ===== */
 .puertas-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,77 +86,9 @@ nav a:hover {
     padding-top: 100px;
 }
 
-/* ===== FORMULARIOS (para registro, contacto, etc.) ===== */
-form {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 25px;
-    display: inline-block;
-    border-radius: 20px;
-    box-shadow: 0 0 15px #ff6600;
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-input,
-textarea,
-button {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Creepster', cursive;
-    font-size: 1rem;
-}
-
-button {
-    background: #ff6600;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #ff3300;
-    box-shadow: 0 0 10px #ff3300;
-}
-
-a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
-}
-
-/* ===== FOOTER ===== */
 footer {
     background: #000;
     color: #ff6600;
     padding: 20px;
     border-top: 1px solid #222;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 700px) {
-    .puertas-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    .puertas-container {
-        grid-template-columns: 1fr;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px auto;
-        width: 80%;
-    }
 }
