@@ -1,7 +1,7 @@
 # Hallowen
 
 ```
-└── 📁hallowen
+└── 📁Hallowen
     └── 📁audios
         ├── freddy.m4a
     └── 📁gifs
@@ -25,6 +25,9 @@
         ├── dracula.jpg
         ├── fantasma.jpg
         ├── franki.jpg
+        ├── freddy1.jpg
+        ├── freddy2.jpg
+        ├── freddy3.webp
         ├── it.png
         ├── poe.jpg
         ├── port1.jpg
@@ -87,15 +90,12 @@
         ├── ashley.css
         ├── candyman.css
         ├── chucky.css
-        ├── compra.css
-        ├── descarga.css
         ├── freddy.css
         ├── gosthface.css
         ├── jason.css
         ├── leatherface.css
         ├── maniac.css
         ├── michael.css
-        ├── registro.css
         ├── styles.css
         ├── styles1.css
         ├── tallman.css
